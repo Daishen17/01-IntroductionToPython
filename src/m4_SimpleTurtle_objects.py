@@ -10,7 +10,7 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Yifan Dai.
 """
 ###############################################################################
 #
@@ -26,10 +26,14 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ###############################################################################
 
 import rosegraphics as rg
+Natacha = rg.SimpleTurtle()
+print('Natacha')
+
+
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +52,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -73,6 +77,8 @@ import rosegraphics as rg
 #   change this _TODO_ to DONE and  ** continue to the next _TODO_ (below). **
 #
 ###############################################################################
+import rosegraphics as rg
+
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
@@ -116,7 +122,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -126,7 +132,17 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
-
+natasha = rg.SimpleTurtle()
+natasha.forward(100)
+natasha.speed = 10
+boris.speed = natasha.speed
+natasha.left(2000)
+boris.speed = natasha.speed
+natasha.backward(100)
+natasha.speed = 1
+boris.speed = natasha.speed
+natasha.right(2000)
+boris.speed = natasha.speed
 ###############################################################################
 #
 # TODO: 5.
@@ -152,8 +168,14 @@ natasha.go_to(rg.Point(-100, 200))
 #
 #   As always, test by running the module.
 #
-###############################################################################
-
+##############################################################################
+import rosegraphics as rg
+Dai = rg.SimpleTurtle()
+Dai.forward(100)
+Dai.speed = 10
+boris = rg.SimpleTurtle()
+boris.forward(100)
+boris.speed = Dai.speed
 ###############################################################################
 #
 # TODO: 6.
