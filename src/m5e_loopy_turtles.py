@@ -77,7 +77,7 @@ for k in range(6):
     blue_turtle.pen_down()
     size = size - 12
 
-###############################################################################
+########################################################## #####################
 # Example 2.  It shows how to speed up the animation.
 ###############################################################################
 window.tracer(100)  # Bigger numbers make the animation run faster

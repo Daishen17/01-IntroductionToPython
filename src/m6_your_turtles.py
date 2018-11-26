@@ -2,18 +2,30 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Yifan Dai  .
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow
+white_turtle = rg.SimpleTurtle('turtle')
+white_turtle.pen = rg.Pen('black', 3)
+white_turtle.speed = 10
+size = 200
+for k in range(1):
+    white_turtle.draw_square(size)
+    white_turtle.pen_up()
+    white_turtle.right(200)
+    white_turtle.forward(1000)
+    white_turtle.left(250)
+
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
-#
 #   Below this comment, add ANY CODE THAT YOU WANT, as long as:
 #     1. You construct at least 2 rg.SimpleTurtle objects.
 #     2. Each rg.SimpleTurtle object draws something
